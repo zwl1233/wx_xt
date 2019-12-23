@@ -1,4 +1,4 @@
-// pages/my/index.js
+// pages/library/library.js
 Page({
 
   /**

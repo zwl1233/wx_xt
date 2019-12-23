@@ -4,24 +4,38 @@ Component({
     color: "#7A7E83",
     selectedColor: "#3cc51f",
     list: [{
-      pagePath: "/index/index",
-      iconPath: "/image/icon_component.png",
-      selectedIconPath: "/image/icon_component_HL.png",
-      text: "组件"
-    }, {
-      pagePath: "/index/index2",
-      iconPath: "/image/icon_API.png",
-      selectedIconPath: "/image/icon_API_HL.png",
-      text: "接口"
-    }]
+        pagePath: "/pages/index/index",
+        iconPath: "/image/shouye2.png",
+        selectedIconPath: "/image/shouye.png",
+        text: "首页"
+      }, {
+        pagePath: "/pages/classList/classList",
+        iconPath: "/image/kecheng2.png",
+        selectedIconPath: "/image/kecheng.png",
+        text: "去上课"
+      },
+      {
+        pagePath: "/pages/library/library",
+        iconPath: "/image/shangdian2.png",
+        selectedIconPath: "/image/shangdian.png",
+        text: "暄桐文房"
+      }, {
+        pagePath: "/pages/mySelf/mySelf",
+        iconPath: "/image/wode2.png",
+        selectedIconPath: "/image/wode.png",
+        text: "我的"
+      }
+    ]
   },
-  attached() {
-  },
+  attached() {},
   methods: {
     switchTab(e) {
       const data = e.currentTarget.dataset
       const url = data.path
-      wx.switchTab({ url })
+      wx.switchTab({
+        url
+      })
+      console.log(data.index,'index')
       this.setData({
         selected: data.index
       })

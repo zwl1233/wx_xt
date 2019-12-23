@@ -2,9 +2,10 @@
   // 数组的第一项代表小程序的初始页面（首页）。小程序中新增/减少页面，都需要对 pages 数组进行修改。
   "pages": [
     "pages/index/index",
-    "pages/list/index",
-    "pages/my/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/classList/classList",
+    "pages/library/library",
+    "pages/mySelf/mySelf"
   ],
   // 用于设置小程序的状态栏、导航条、标题、窗口背景色,下拉刷新
   "window": {
@@ -24,11 +25,11 @@
         "text":"首页"
       },
       {
-        "pagePath": "pages/list/index",
+        "pagePath": "pages/classList/classList",
         "text": "列表"
       },
       {
-        "pagePath": "pages/my/index",
+        "pagePath": "pages/mySelf/mySelf",
         "text": "个人中心"
       }
     ],
