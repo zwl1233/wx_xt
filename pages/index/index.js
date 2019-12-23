@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+import {http} from "../../utils/request.js"
 
 Page({
   data: {
@@ -56,6 +57,9 @@ Page({
         }
       })
     }
+  },
+  onReady:function(){
+    http.post("/article/list", { "pageIndex": 1, "columnId": "2"})
   },
   getUserInfo: function (e) {
     console.log(e)
