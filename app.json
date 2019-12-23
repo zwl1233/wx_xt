@@ -1,10 +1,12 @@
 {
+  // 数组的第一项代表小程序的初始页面（首页）。小程序中新增/减少页面，都需要对 pages 数组进行修改。
   "pages": [
     "pages/index/index",
     "pages/list/index",
     "pages/my/index",
     "pages/logs/logs"
   ],
+  // 用于设置小程序的状态栏、导航条、标题、窗口背景色,下拉刷新
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
