@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="app-swiper">
+    <swiper indicator-dots="{{swiperObj.isShow}}" autoplay="{{swiperObj.autoPlay}}" interval="{{swiperObj.interval}}" duration="{{swiperObj.duration}}" circular="{{swiperObj.circular}}" style="height:{{curHeight}}px" bindchange="swiperChange">
+      <block wx:for="{{swiperAry}}" wx:key="index">
+        <swiper-item item-id="{{index}}">
+          <view class="swiper-item">
+            <cover-image src="{{item}}" bindload="imgLoad" data-index="{{index}}"></cover-image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="icon-wrap">
+  
+  </view>
+</view>

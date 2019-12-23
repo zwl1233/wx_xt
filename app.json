@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/index",
+    "pages/my/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "暄桐教室",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color":"#000000",
+    "selectedColor":"#9AFF9A",
+    "backgroundColor":"#F2F2F2",
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "text": "列表"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "个人中心"
+      }
+    ],
+    "usingComponents":{}
+  },
+  "sitemapLocation": "sitemap.json"
+}
