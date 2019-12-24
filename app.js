@@ -35,8 +35,15 @@ App({
   },
   onLoad: function () {//相当于vue的monuted
     // 页面渲染后 执行
+    console.log('onLoad')
+  },
+  onShow(){
+    console.log('onShow')
+  },
+  onHide(){
+    console.log('onHide')
   },
   globalData: {
-    userInfo: null
+    userInfo: null,//用户信息
   }
 })
