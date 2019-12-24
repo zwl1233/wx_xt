@@ -9,6 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    data:[],//所有数据
     dataLeft: [], //左侧
     dataRight: [], //右侧
     page: 1,
@@ -63,6 +64,9 @@ Page({
       if (res.code == 0) {
         console.log(res)
         this.fillData(res.result.productionResponseVos)
+        this.setData({
+          data: this.data.data.concat(res.result.productionResponseVos)
+        })
         if(kind=='down'){
           wx.stopPullDownRefresh()
         }else if(kind=='more'){
@@ -128,11 +132,11 @@ Page({
     查看大图
    */
   lookView(e){
-    console.log(e)
-    var imgAry = e.target.dataset.imgary.map(item => item.pictureUrl)
+    console.log(e.currentTarget.dataset)
+    var imgAry = e.currentTarget.dataset.imgary.map(item => item.pictureUrl)
     wx.previewImage({
-      current:e.target.dataset.idx,     //当前图片地址
-      urls: imgAry,               //所有要预览的图片的地址集合 数组形式
+      current: this.data.data,     //当前图片地址
+      urls: [e.currentTarget.dataset.url],               //所有要预览的图片的地址集合 数组形式
       success: function (res) { },
       fail: function (res) { },
       complete: function (res) { },

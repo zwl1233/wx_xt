@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/classList/classList",
     "pages/library/library",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/classList/classList",
     "pages/mySelf/mySelf"
   ],
   "window": {

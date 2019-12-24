@@ -1,2 +1,11 @@
 /**app.wxss**/
 
+/* 
+ 存在tab页的底部显示不全的问题
+ */
+ .appGlobal-content{
+   padding-bottom:56px;
+   padding:10rpx 10rpx 56px 10rpx;
+   box-sizing: border-box;
+ }
+

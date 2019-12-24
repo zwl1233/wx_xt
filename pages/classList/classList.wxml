@@ -1,2 +1,14 @@
 <!--pages/classList/classList.wxml-->
-<text>pages/classList/classList.wxml</text>
+<view class="library appGlobal-content">
+<view class="library-search">
+<input/>
+</view>
+<view class="library-content">
+<view class="library-tabs">
+
+</view>
+<view class="library-tabContent">
+
+</view>
+</view>
+</view>

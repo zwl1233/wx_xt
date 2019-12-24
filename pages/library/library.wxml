@@ -1,18 +1,18 @@
 <!--pages/library/library.wxml-->
-<view class="waterFlow">
+<view class="waterFlow appGlobal-content">
   <view class="waterContent">
     <view class="waterLeft">
-      <view class="waterBox" wx:for="{{dataLeft}}" wx:key="{{item.productionId}}" bindtap="lookView">
-        <cover-image src="{{item.thumbUrl}}" style="height:{{item.currentHeight}}px" data-imgAry="{{dataLeft}}" data-idx="{{index}}"></cover-image>
+      <view class="waterBox" wx:for="{{dataLeft}}" wx:key="{{item.productionId}}" bindtap="lookView" data-imgary="{{dataLeft}}" data-idx="{{index}}" data-url="{{item.pictureUrl}}">
+        <cover-image src="{{item.thumbUrl}}" style="height:{{item.currentHeight}}px"></cover-image>
         <text class="waterBox-introduction">{{item.introduction}}</text>
         <text class="waterBox-author">{{item.author}}</text>
       </view>
     </view>
     <view class="waterRight">
-      <view class="waterBox" wx:for="{{dataRight}}" wx:key="{{item.productionId}}" bindtap="lookView" data-imgAry="{{dataRight}}" data-idx="{{index}}">
+      <view class="waterBox" wx:for="{{dataRight}}" wx:key="{{item.productionId}}" bindtap="lookView" data-imgary="{{dataRight}}" data-idx="{{index}}" data-url="{{item.pictureUrl}}">
         <cover-image src="{{item.thumbUrl}}" style="height:{{item.currentHeight}}px"></cover-image>
-         <text class="waterBox-introduction">{{item.introduction}}</text>
-          <text class="waterBox-author">{{item.author}}</text>
+        <text class="waterBox-introduction">{{item.introduction}}</text>
+        <text class="waterBox-author">{{item.author}}</text>
       </view>
     </view>
   </view>
