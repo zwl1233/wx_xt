@@ -1,0 +1,8 @@
+<view class="bigBox">
+  <view class="search">
+    <input placeholder="搜索你感兴趣的内容" bindtap='bindfocus'></input>
+    <image src="../../image/fangdajing.png"></image>
+  </view>
+  <view class="oldClass">返回老教室</view>
+  <!-- <navigator class="oldClass" open-type="navigate">返回老教室</navigator> -->
+</view>

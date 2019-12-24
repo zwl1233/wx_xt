@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<search></search>
 <view class="container">
   <view class="app-swiper">
     <swiper indicator-dots="{{swiperObj.isShow}}" autoplay="{{swiperObj.autoPlay}}" interval="{{swiperObj.interval}}" duration="{{swiperObj.duration}}" circular="{{swiperObj.circular}}" style="height:{{curHeight}}px" bindchange="swiperChange">
@@ -15,3 +16,5 @@
   
   </view>
 </view>
+<nav></nav>
+

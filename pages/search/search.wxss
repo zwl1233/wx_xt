@@ -1,0 +1,28 @@
+
+.bigBox{
+  display: flex
+}
+.search{
+  position: relative
+}
+input{
+  flex: 7;
+  width: 550rpx;
+  height:60rpx;
+  margin-left: 30rpx;
+  background: #eee;
+  border-radius:20rpx;
+  text-indent: 100rpx
+}
+image{
+  width: 40rpx;
+  height:40rpx;
+  position:absolute;
+  left: 60rpx;
+  top: 6rpx
+}
+.oldClass{
+  height:50rpx;
+  color:#c4a57f;
+  margin-left: 30rpx
+}

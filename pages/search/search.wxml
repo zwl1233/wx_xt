@@ -1,0 +1,7 @@
+<view class="bigBox">
+  <view class="search">
+    <input placeholder="搜索你感兴趣的内容"  focus="{{inputFocus}}"></input>
+    <image src="../../image/fangdajing.png"></image>
+  </view>
+  <view class="oldClass" bindtap="back">取消</view>
+</view>
