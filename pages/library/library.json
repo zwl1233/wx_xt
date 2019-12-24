@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText":"同学作业分享",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#ccc",
+  "backgroundTextStyle": "dark"
 }

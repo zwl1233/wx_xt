@@ -19,7 +19,9 @@ const ajax = ({
       responseType: responseType,
       success: function(res) {
         //接口访问正常返回数据
-        resolve(res)
+        if(res.statusCode==200){
+          resolve(res.data)
+        }
       },
       fail: function(error) {
         reject(error)
@@ -31,7 +33,7 @@ const ajax = ({
 
 const http = {
   get: function(url,data,params) {
-    ajax({ 
+    return ajax({ 
       url,
       data,
       ...params,
@@ -39,7 +41,7 @@ const http = {
     })
   },
   post: function(url,data,params) {
-    ajax({ 
+   return ajax({ 
       url,
       data,
       ...params,

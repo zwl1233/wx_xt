@@ -1,1 +1,38 @@
 /* pages/library/library.wxss */
+.waterFlow{
+  width:100%;
+  padding-bottom:56px;
+}
+.waterContent{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  padding:10rpx;
+  box-sizing: border-box;
+}
+
+.waterLeft{
+  width:48%;
+}
+.waterRight{
+  width:48%;
+}
+.waterBox{
+  margin-bottom:30rpx;
+}
+.waterBox cover-image{
+  object-fit: cover;
+}
+.waterBox-introduction{
+  display:block;
+  margin-top: 10rpx;
+}
+.waterBox-author{
+  display:block;
+  margin-top:10rpx;
+  color:#C4A57F;
+}
+
+.loadMore{
+  text-align:center;
+}

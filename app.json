@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/library/library",
     "pages/index/index",
     "pages/logs/logs",
     "pages/classList/classList",
-    "pages/library/library",
     "pages/mySelf/mySelf"
   ],
   "window": {
@@ -24,14 +24,17 @@
       },
       {
         "pagePath": "pages/classList/classList",
-        "text": "列表"
+        "text": "去上课"
+      },
+      {
+        "pagePath": "pages/library/library",
+        "text": "暄桐文房"
       },
       {
         "pagePath": "pages/mySelf/mySelf",
-        "text": "个人中心"
+        "text": "我的"
       }
-    ],
-    "usingComponents":{}
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

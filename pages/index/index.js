@@ -24,6 +24,16 @@ Page({
       'https://oss-free.xuantong.cn/picturePath/94f398e54a4946a209774dbed972cf02.jpg'
     ]
   },
+  created(){
+    // this.getTabBar()
+  },
+  onShow(){
+    console.log('onShow')
+    console.log(this.getTabBar(), 'tabBar')
+    this.getTabBar().setData({
+      selected:0
+    })
+  },
   //事件处理函数
   bindViewTap: function () {
     wx.navigateTo({
@@ -62,7 +72,6 @@ Page({
     http.post("/article/list", { "pageIndex": 1, "columnId": "2"})
   },
   getUserInfo: function (e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -71,12 +80,10 @@ Page({
   },
   //图片加载完成后计算高度
   imgLoad(e) {
-    console.log(e)
-    console.log(wx.getSystemInfoSync().windowWidth)//获取屏宽
+    // console.log(wx.getSystemInfoSync().windowWidth)//获取屏宽
     let h = wx.getSystemInfoSync().windowWidth * e.detail.height / e.detail.width
     // let imgHeight=e.detail.height
-    console.log(height)
-    console.log(this, 'this')
+    // console.log(height)
     let height = this.data.height
     height[e.target.dataset.index] = h
     this.setData({
